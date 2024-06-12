@@ -1,0 +1,131 @@
+  
+  header{
+    display: flex;
+    justify-content: end;
+    border-bottom: black solid ;
+  }  
+  
+  /*changing curson from the toogle dark mode button*/
+  header h1{
+    padding-right: 20px;
+    cursor:pointer;
+  }
+
+  body {
+    font-family: sans-serif;
+    background-color: #f0f0f0;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+  }
+  
+  main {
+    
+    display: flex;
+    margin-top: 10px;
+    border-top: black solid ;
+    text-align: center;
+  }
+  
+  /*adding style to the circle*/
+  #circle-mode{
+    display: flex;
+    justify-content: center;
+    border-right: black solid ;
+    padding: 10% 10% 0 10%;
+    
+   
+  }
+
+   /*creating circle with gradient*/
+  .circle {
+    width: 500px;
+    height: 500px;
+    line-height: 500px;
+    border-radius: 50%;
+    font-size: 50px;
+    color: #fff;
+    text-align: center;
+    background: linear-gradient(rgb(255, 213, 0), rgb(141, 125, 1));
+  }
+
+
+   /*giving style to the form*/
+  #form {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left:1%;
+    padding: 11% 2% 11% 2% ;
+    border-left: black solid ;
+  }
+  
+  #form input[type="text"], button {
+    padding: 8px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    
+  }
+  
+  #form label{
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  #form input[type="text"] {
+    background-color: #f0f0f0;
+    color: black;
+    width: 100%;
+  }
+
+
+  /*changing submit button*/
+  button {
+    cursor: pointer;
+    background-color:black;
+    width: 100%; 
+  }
+ 
+   /*dark mode style*/
+  .dark-mode {
+    background-color: #222;
+    color: #fff;
+}
+
+.dark-mode header {
+    border-bottom-color: white;
+}
+
+.dark-mode main {
+    border-top-color: white;
+}
+
+.dark-mode #circle-mode {
+    border-right-color: white;
+}
+
+.dark-mode .circle {
+    background: linear-gradient(white, #333);
+}
+
+.dark-mode #form {
+    border-left-color: white;
+}
+
+.dark-mode #form input[type="text"] {
+    background-color: #333;
+    color: white;
+}
+
+.dark-mode button {
+    background-color: white;
+    color: black;
+}
